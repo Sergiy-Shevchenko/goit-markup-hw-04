@@ -507,18 +507,25 @@ footer {
 
 /*Адреса*/
 
-.footer {
+footer {
+  /*display: flex;*/
   padding-top: 60px;
   padding-bottom: 60px;
+}
+footer .container {
+  display: flex;
+  /*justify-content: flex-start;*/
+  align-items: baseline;
 }
 
 .text-web-footer {
   margin-bottom: 20px;
   display: block;
 }
-/*.connect {
-  padding-bottom: 10px;
-}*/
+
+.link-social {
+  margin-left: 70px;
+}
 
 .address {
   font-style: normal;
@@ -554,10 +561,6 @@ footer {
   margin-top: 72px;
 }
 
-.footer {
-  display: flex;
-}
-
 .foot-link {
   display: flex;
   gap: 10px;
@@ -583,14 +586,6 @@ footer {
 .footer-soc-icon {
   fill: var(--background-color);
 }
-
-/*.footer-link-soc {
-  width: 250px;
-}
-.footer-link-con {
-  width: 250px;
-  margin-left: 215px;
-}*/
 
 /*Hover*/
 
