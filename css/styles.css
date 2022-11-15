@@ -143,9 +143,11 @@ font-weight: 700;*/
   justify-content: center;
 }
 
-/*.contact_icon {
-  background-color: currentColor;
-}*/
+.contact-icon {
+  align-items: center;
+  margin-right: 10px;
+  fill: var(--text-title-color);
+}
 
 .text-web-header,
 .text-web-footer,
@@ -182,7 +184,11 @@ font-weight: 700;*/
 
 .hero {
   background-color: var(--footer-background-color);
-  background-image: url(../images/fone.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/fone.jpg);
   background-position: center;
   padding: 200px 0px;
 }
@@ -229,7 +235,6 @@ font-weight: 700;*/
   /*background-image: url(../images/antenna\ 1.svg);*/
   background-position: center;
   background-repeat: no-repeat;
-
   margin-bottom: 30px;
 }
 
@@ -389,10 +394,7 @@ font-weight: 400;*/
 
 .clients-title-icon {
   display: flex;
-  width: 106px;
-  height: 60px;
-  align-items: center;
-  justify-content: center;
+  margin: 16px 32px;
 }
 
 .client-icon {
@@ -509,9 +511,6 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-link {
-  display: flex;
-}
 
 .text-web-footer {
   margin-bottom: 20px;
@@ -546,38 +545,52 @@ footer {
 .foot-soc {
   font-family: "Roboto";
   font-style: normal;
-  font-weight: 700;
+  /*font-weight: 700;*/
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.1428;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
+  margin-top: 72px;
+}
+
+.footer {
+  display: flex;
 }
 
 .foot-link {
   display: flex;
-  justify-content: center;
   gap: 10px;
-}
-.foot-soc {
 }
 
 .foot-link-icon {
+  display: block;
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+  margin-top: 20px;
 }
 
 .foot-soc-icon {
   display: flex;
   width: 100%;
   height: 100%;
-  /*background-color: #2196f3;*/
   border-radius: 50%;
   align-items: center;
   justify-content: center;
 }
+.footer-soc-icon {
+  fill: var(--background-color);
+}
+
+/*.footer-link-soc {
+  width: 250px;
+}
+.footer-link-con {
+  width: 250px;
+  margin-left: 215px;
+}*/
 
 /*Hover*/
 
@@ -588,7 +601,7 @@ footer {
   color: var(--text-active-color);
 }
 
-.connect-link:hover .contact_icon {
+.connect-link:hover .contact-icon {
   fill: var(--text-active-color);
 }
 
