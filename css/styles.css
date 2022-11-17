@@ -223,24 +223,24 @@ font-weight: 700;*/
 
 .main-title {
   width: 270px;
-  /*outline: 2px solid blue;*/
   margin-right: 30px;
 }
 
 .main-title-img {
-  display: block;
-
+  /*display: block;*/
+  height: 120px;
   width: 270px;
   /*outline: 2px solid blue;*/
   border-radius: 4px;
   background-color: var(--button-background-color);
   /*background-image: url(../images/antenna\ 1.svg);*/
-  /*background-position: center;*/
+  background-position: center;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   margin-right: 30px;
-  padding: 25px 100px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .main-title:nth-last-child(-n + 1) {
@@ -435,7 +435,6 @@ font-weight: 400;*/
   color: var(--background-color);
   background-color: var(--text-active-color);
   border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
   margin-top: 30px;
 }
@@ -540,7 +539,7 @@ footer .container {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  margin-top: 9px;
+  padding-top: 9px;
 }
 
 .foot-soc {
@@ -552,7 +551,6 @@ footer .container {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-color);
-  margin-top: 72px;
   margin-bottom: 10px;
 }
 
@@ -623,13 +621,27 @@ footer .container {
 }
 
 .button-order:hover {
-  /*color: var(--text-color);
-  border: none;*/
-  background-color: var(--footer-background-color);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.button-order:focus {
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .link-img-portfol:hover .img,
 .link-img-portfol:hover .link-img {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.link-img-portfol:focus .img,
+.link-img-portfol:focus .link-img {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -679,12 +691,6 @@ footer .container {
   background-color: var(--text-active-color);
 }
 
-.button-order:focus {
-  /*color: var(--text-color);*/
-  border: none;
-  background-color: var(--footer-background-color);
-}
-
 /*Active*/
 
 .header-link:active,
@@ -693,5 +699,7 @@ footer .container {
 }
 
 .button-order:active {
-  color: var(--background-color);
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
