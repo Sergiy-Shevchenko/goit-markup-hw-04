@@ -15,8 +15,12 @@ body {
   /*background-color: var(--background-color);*/
 }
 
-ul {
+ul,
+li,
+h3,
+p {
   list-style: none;
+  text-decoration: none;
 }
 
 /*Властивост контейнера*/
@@ -433,8 +437,9 @@ font-weight: 400;*/
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--background-color);
+  cursor: pointer;
   background-color: var(--text-active-color);
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   padding: 10px 32px;
   margin-top: 30px;
 }
@@ -490,6 +495,7 @@ font-weight: 400;*/
 
 .link-img-portfol {
   display: block;
+  text-decoration: none;
 }
 
 /*Футер*/
